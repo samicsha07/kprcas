@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KPRCAS College Landing Page</title>
+  <style>
+    /* Reset & basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #004080, #0080ff);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Logo container */
+    .logo-container {
+      margin-bottom: 30px;
+      width: 250px;
+      height: 250px;
+    }
+
+    /* Placeholder logo styling */
+    .logo-placeholder {
+      background-color: #003366;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      user-select: none;
+      font-weight: 900;
+      font-size: 48px;
+      letter-spacing: 6px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .logo-placeholder span {
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    /* Welcome text */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* Button */
+    .btn {
+      background-color: #00aaff;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,170,255,0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #008fcc;
+      box-shadow: 0 8px 25px rgba(0,143,204,0.7);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .logo-container {
+        width: 180px;
+        height: 180px;
+      }
+      .logo-placeholder {
+        width: 180px;
+        height: 180px;
+        font-size: 36px;
+      }
+      .logo-placeholder span {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 12px 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <!-- Replace below div with an <img> tag for actual logo -->
+    <div class="logo-placeholder">
+      KPRCAS
+      <span>College</span>
+    </div>
+  </div>
+
+  <h1>Welcome to KPRCAS College</h1>
+  <p>
+    Empowering students with knowledge, innovation, and excellence. Join us to shape a brighter future through education and research.
+  </p>
+  <a href="#apply" class="btn">Apply Now</a>
+
+</body>
+</html>
