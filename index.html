@@ -2,10 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My First Webpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GitHub Login</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: #161b22;
+      padding: 40px 50px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgb(140 149 159 / 15%);
+      width: 350px;
+    }
+    .login-container h1 {
+      margin-bottom: 24px;
+      font-weight: 600;
+      font-size: 24px;
+      color: #c9d1d9;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #8b949e;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-size: 14px;
+      outline-offset: -2px;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #58a6ff;
+      box-shadow: 0 0 0 3px rgb(56 139 253 / 0.4);
+    }
+    button {
+      width: 100%;
+      background-color: #238636;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #2ea043;
+    }
+    .forgot-password {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .forgot-password a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to KPRCAS College</h1>
-  <p>This is the landing page.</p>
-</body>
-</html>
+
+  <div class="login-container">
+    <h1>Sign in to GitHub</h1>
+    <form action="#" method="POST">
+      <label for="username">Username or email address</label>
+      <input type="text" id="username" name="username" placeholder="Enter username or email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password"
